@@ -1,0 +1,31 @@
+
+STM32
+    A4988 (Gpio n?)
+    MPU6050 (i2c n?)
+    SW : drv_Uart + drv_MPU + drv_A4988 + freeRTOS (pour la CLI)
+       - Mode Debug 1: Avance - Recule mm endroit
+       - Mode Debug 2: Avance - Recule mm endroit sur pente
+       - Mode Debug 3: Carré par la gauche - Carré par la droite
+       - Mode CLI :
+
+Rpi-0
+    Dualshock (Bt)
+        ds4drv https://github.com/chrippa/ds4drv
+    Uart (Gpio n?)
+    SW : 
+        Cmd log des evenement Dualshock :
+        Service ds4drv2uart.py au démarrage : 
+
+Alim 11.1V 2A de charge des accus 18650
+
+    Alim 18650 (3.7v x3) x2
+        5V 1A alim des cartes
+        11.1V alim steppers
+
+Méca
+    x2 mot nema : 
+    impression 3D : 
+        base_steppers_lego.swks
+        base_accus_lego.swks
+        base_STM32_Rpi0_A4988_lego.swks
+        base_IMU_lego.swks
