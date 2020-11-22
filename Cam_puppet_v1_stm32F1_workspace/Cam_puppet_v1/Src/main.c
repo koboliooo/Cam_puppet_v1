@@ -109,7 +109,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  MPU6050_Read_All(&hi2c1, &MPU6050_Datas);
-	  TRACE("Ax = %f; Ay = %f; Az = %f; \r\n",MPU6050_Datas.Ax,MPU6050_Datas.Ay,MPU6050_Datas.Az);
+	  TRACE("Ax = %d; Ay = %d; Az = %d; \r\n",MPU6050_Datas.Accel_X_RAW,MPU6050_Datas.Accel_Y_RAW,MPU6050_Datas.Accel_Z_RAW);
 	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */

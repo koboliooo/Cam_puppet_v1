@@ -1,8 +1,8 @@
-added from Rpi0
-
 
 STM32
     A4988 (Gpio n?)
+	2 timers (TIM1, TIM2) at 400kHz
+	
     MPU6050 (i2c1 B6 SCL B7 SDA)
     SW : drv_Uart + drv_MPU + drv_A4988 + freeRTOS (pour la CLI)
        - Mode Debug 1: Avance - Recule mm endroit
@@ -18,6 +18,9 @@ Rpi-0
     SW : 
         Cmd log des evenement Dualshock :
         Service ds4drv2uart.py au démarrage : 
+	Cmd log STM32 : minicom -b 115200 -D /dev/ttyS0
+	Cmd remote debug : st-util -m 
+		st-util come from package stlink-tools, use openocd debug config and set remote ip adress and port
 
 Alim 11.1V 2A de charge des accus 18650
 
