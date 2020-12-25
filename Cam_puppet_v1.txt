@@ -2,14 +2,25 @@
 STM32
     A4988 (Gpio n?)
 	2 timers (TIM1, TIM2) at 400kHz
+	PA15 "PWM X"
+	PB3 "DIR X"
+	PB4 "PWM Y"
+	PB5 "DIR Y"
 	
-    MPU6050 (i2c1 B6 SCL B7 SDA)
+    MPU6050 
+	i2c1 
+	PB6 SCL 
+	PB7 SDA
+
+    UART 
+	PA9 TX 
+	PA10 RX
+ 
     SW : drv_Uart + drv_MPU + drv_A4988 + freeRTOS (pour la CLI)
        - Mode Debug 1: Avance - Recule mm endroit
        - Mode Debug 2: Avance - Recule mm endroit sur pente
        - Mode Debug 3: Carré par la gauche - Carré par la droite
        - Mode CLI :
-    UART A9 TX A10 RX
 
 Rpi-0
     Dualshock (Bt)
